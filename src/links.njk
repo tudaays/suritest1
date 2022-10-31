@@ -8,6 +8,7 @@ permalink: "{{ link }}/"
 
 <!DOCTYPE html>
 {% if env.js -%}
+  <meta property="og:url" content="https://suritest1.netlify.app" />
   <script>window.location.replace('{{ links[link] }}')</script>
 {% else -%}
   <meta http-equiv=refresh content="0; url={{ links[link] }}">
