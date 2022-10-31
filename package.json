@@ -1,0 +1,27 @@
+{
+  "name": "suri",
+  "version": "0.5.0",
+  "private": true,
+  "description": "Your own link shortener that's easily deployed as a static site (for free)",
+  "homepage": "https://github.com/jstayton/suri#readme",
+  "bugs": "https://github.com/jstayton/suri/issues",
+  "license": "MIT",
+  "repository": "jstayton/suri",
+  "scripts": {
+    "build": "npm run clean && NODE_ENV=production eleventy",
+    "clean": "del _site",
+    "dev": "eleventy --serve",
+    "lint": "prettier --check .",
+    "lint:fix": "prettier --write .",
+    "release": "release-it"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.1",
+    "del-cli": "^4.0.1",
+    "prettier": "2.7.1",
+    "release-it": "^15.0.0"
+  },
+  "engines": {
+    "node": ">=14"
+  }
+}
